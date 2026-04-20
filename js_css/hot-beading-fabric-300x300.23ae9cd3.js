@@ -1,1 +1,0 @@
-const o="/wp-content/uploads/2023/10/flora-embroidery-fabric-6-300x300.jpg",t="/wp-content/uploads/2023/10/3d-embroidery-fabric1-300x300.jpg",p="/wp-content/uploads/2023/10/hot-beading-fabric-300x300.jpg";export{o as _,t as a,p as b};
