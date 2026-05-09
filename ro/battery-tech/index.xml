@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Baterii on LINKTROL</title>
-    <link>http://localhost:1313/ro/battery-tech/</link>
-    <description>Recent content in Baterii on LINKTROL</description>
-    <generator>Hugo</generator>
-    <language>ro-RO</language>
-    <atom:link href="http://localhost:1313/ro/battery-tech/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Baterii on LINKTROL</title><link>https://linktrol.com/ro/battery-tech/</link><description>Recent content in Baterii on LINKTROL</description><generator>Hugo</generator><language>ro-RO</language><atom:link href="https://linktrol.com/ro/battery-tech/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
