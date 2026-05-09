@@ -20766,6 +20766,20 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
   .td-navbar__drawer-toggler:focus-visible {
     box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.35); }
 
+@media (max-width: 767.98px) {
+  .td-navbar {
+    min-height: unset; }
+  .td-navbar__brand-row {
+    min-height: 2.25rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem; }
+  .navbar-brand .navbar-brand__logo svg {
+    height: 1.5rem; }
+  .td-navbar__drawer-toggler i.fa-xl {
+    font-size: 1.15rem;
+    line-height: 1;
+    vertical-align: middle; } }
+
 .td-mobile-nav {
   --bs-offcanvas-width: min(22rem, 88vw);
   z-index: 1055; }

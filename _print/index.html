@@ -398,6 +398,12 @@
         background:var(--white);
       }
       .tg * { box-sizing:border-box; }
+       
+      @media (min-width: 768px) {
+        .tg-hero {
+          padding-top: calc(1.5rem + 4rem + env(safe-area-inset-top, 0px));
+        }
+      }
       .tg-wrap { max-width:1200px; margin:0 auto; padding:0 24px; }
       .tg-btn {
         display:inline-flex; align-items:center; justify-content:center;
