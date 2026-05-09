@@ -1,34 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Core Tasks on LINKTROL</title><link>https://linktrol.com/docs/tasks/</link><description>Recent content in Core Tasks on LINKTROL</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://linktrol.com/docs/tasks/index.xml" rel="self" type="application/rss+xml"/><item><title>Bed and Chair Metrics</title><link>https://linktrol.com/docs/tasks/beds/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://linktrol.com/docs/tasks/beds/</guid><description>&lt;p&gt;This is a &lt;strong&gt;placeholder page&lt;/strong&gt;. For an example of the kind of content that can
-be added here, see the &lt;a href="https://linktrol.com/docs/getting-started/example-page/"&gt;example page&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="welcome"&gt;Welcome!&lt;a class="td-heading-self-link" href="#welcome" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Welcome to the Docsy theme user guide! This guide shows you how to get started
-creating technical documentation sites using Docsy, including site customization
-and how to use Docsy&amp;rsquo;s blocks and templates.&lt;/p&gt;
-&lt;h2 id="what-is-docsy"&gt;What is Docsy?&lt;a class="td-heading-self-link" href="#what-is-docsy" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Docsy is a theme for the &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s
-specifically designed for technical documentation sets and has a lot of best
-practices built in. Use Docsy to get a working and reliable documentation site
-up and running fast, and then get back to focusing on great content for your
-users. &lt;a href="https://linktrol.com/about/"&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Porridge Assessment</title><link>https://linktrol.com/docs/tasks/porridge/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://linktrol.com/docs/tasks/porridge/</guid><description>&lt;p&gt;This is a &lt;strong&gt;placeholder page&lt;/strong&gt;. For an example of the kind of content that can
-be added here, see the &lt;a href="https://linktrol.com/docs/getting-started/example-page/"&gt;example page&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="welcome"&gt;Welcome!&lt;a class="td-heading-self-link" href="#welcome" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Welcome to the Docsy theme user guide! This guide shows you how to get started
-creating technical documentation sites using Docsy, including site customization
-and how to use Docsy&amp;rsquo;s blocks and templates.&lt;/p&gt;
-&lt;h2 id="what-is-docsy"&gt;What is Docsy?&lt;a class="td-heading-self-link" href="#what-is-docsy" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Docsy is a theme for the &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s
-specifically designed for technical documentation sets and has a lot of best
-practices built in. Use Docsy to get a working and reliable documentation site
-up and running fast, and then get back to focusing on great content for your
-users. &lt;a href="https://linktrol.com/about/"&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Another Task</title><link>https://linktrol.com/docs/tasks/task/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://linktrol.com/docs/tasks/task/</guid><description>&lt;p&gt;This is a &lt;strong&gt;placeholder page&lt;/strong&gt;. For an example of the kind of content that can
-be added here, see the &lt;a href="https://linktrol.com/docs/getting-started/example-page/"&gt;example page&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="welcome"&gt;Welcome!&lt;a class="td-heading-self-link" href="#welcome" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Welcome to the Docsy theme user guide! This guide shows you how to get started
-creating technical documentation sites using Docsy, including site customization
-and how to use Docsy&amp;rsquo;s blocks and templates.&lt;/p&gt;
-&lt;h2 id="what-is-docsy"&gt;What is Docsy?&lt;a class="td-heading-self-link" href="#what-is-docsy" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Docsy is a theme for the &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s
-specifically designed for technical documentation sets and has a lot of best
-practices built in. Use Docsy to get a working and reliable documentation site
-up and running fast, and then get back to focusing on great content for your
-users. &lt;a href="https://linktrol.com/about/"&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Core Tasks on LINKTROL</title>
+    <link>http://localhost:1313/docs/tasks/</link>
+    <description>Recent content in Core Tasks on LINKTROL</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/tasks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bed and Chair Metrics</title>
+      <link>http://localhost:1313/docs/tasks/beds/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tasks/beds/</guid>
+      <description>&lt;p&gt;This is a &lt;strong&gt;placeholder page&lt;/strong&gt;. For an example of the kind of content that can&#xA;be added here, see the &lt;a href=&#34;http://localhost:1313/docs/getting-started/example-page/&#34;&gt;example page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;welcome&#34;&gt;Welcome!&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#welcome&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the Docsy theme user guide! This guide shows you how to get started&#xA;creating technical documentation sites using Docsy, including site customization&#xA;and how to use Docsy&amp;rsquo;s blocks and templates.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-docsy&#34;&gt;What is Docsy?&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#what-is-docsy&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s&#xA;specifically designed for technical documentation sets and has a lot of best&#xA;practices built in. Use Docsy to get a working and reliable documentation site&#xA;up and running fast, and then get back to focusing on great content for your&#xA;users. &lt;a href=&#34;http://localhost:1313/about/&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Porridge Assessment</title>
+      <link>http://localhost:1313/docs/tasks/porridge/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tasks/porridge/</guid>
+      <description>&lt;p&gt;This is a &lt;strong&gt;placeholder page&lt;/strong&gt;. For an example of the kind of content that can&#xA;be added here, see the &lt;a href=&#34;http://localhost:1313/docs/getting-started/example-page/&#34;&gt;example page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;welcome&#34;&gt;Welcome!&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#welcome&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the Docsy theme user guide! This guide shows you how to get started&#xA;creating technical documentation sites using Docsy, including site customization&#xA;and how to use Docsy&amp;rsquo;s blocks and templates.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-docsy&#34;&gt;What is Docsy?&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#what-is-docsy&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s&#xA;specifically designed for technical documentation sets and has a lot of best&#xA;practices built in. Use Docsy to get a working and reliable documentation site&#xA;up and running fast, and then get back to focusing on great content for your&#xA;users. &lt;a href=&#34;http://localhost:1313/about/&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Another Task</title>
+      <link>http://localhost:1313/docs/tasks/task/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tasks/task/</guid>
+      <description>&lt;p&gt;This is a &lt;strong&gt;placeholder page&lt;/strong&gt;. For an example of the kind of content that can&#xA;be added here, see the &lt;a href=&#34;http://localhost:1313/docs/getting-started/example-page/&#34;&gt;example page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;welcome&#34;&gt;Welcome!&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#welcome&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the Docsy theme user guide! This guide shows you how to get started&#xA;creating technical documentation sites using Docsy, including site customization&#xA;and how to use Docsy&amp;rsquo;s blocks and templates.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-docsy&#34;&gt;What is Docsy?&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#what-is-docsy&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Docsy is a theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; static site generator that&amp;rsquo;s&#xA;specifically designed for technical documentation sets and has a lot of best&#xA;practices built in. Use Docsy to get a working and reliable documentation site&#xA;up and running fast, and then get back to focusing on great content for your&#xA;users. &lt;a href=&#34;http://localhost:1313/about/&#34;&gt;Learn more about Docsy&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

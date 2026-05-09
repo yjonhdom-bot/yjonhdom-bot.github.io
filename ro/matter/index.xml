@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matter on LINKTROL</title><link>https://linktrol.com/ro/matter/</link><description>Recent content in Matter on LINKTROL</description><generator>Hugo</generator><language>ro-RO</language><atom:link href="https://linktrol.com/ro/matter/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matter on LINKTROL</title>
+    <link>http://localhost:1313/ro/matter/</link>
+    <description>Recent content in Matter on LINKTROL</description>
+    <generator>Hugo</generator>
+    <language>ro-RO</language>
+    <atom:link href="http://localhost:1313/ro/matter/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
