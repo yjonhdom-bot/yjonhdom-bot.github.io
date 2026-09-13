@@ -14,9 +14,8 @@
   var submitLabel = submitBtn ? submitBtn.textContent : cfg.popupSubmit;
 
   var SK_DONE = "tsq_done";
-  var SK_STAY = "tsq_stay";
-  var SK_EXIT = "tsq_exit";
   var LK_DONE = "tsq_submitted";
+  var LK_SEEN = "tsq_seen";
 
   var open = false;
   var sending = false;
@@ -49,8 +48,13 @@
     } catch (_) {}
   }
 
-  function alreadyQuoted() {
-    return storeGet(SK_DONE) === "1" || localGet(LK_DONE) === "1";
+  function rememberSeen() {
+    localSet(LK_SEEN, "1");
+    storeSet(SK_DONE, "1");
+  }
+
+  function alreadySeen() {
+    return localGet(LK_SEEN) === "1" || localGet(LK_DONE) === "1" || storeGet(SK_DONE) === "1";
   }
 
   function fieldValue(id) {
@@ -73,17 +77,15 @@
     alertEl.classList.remove("is-success", "is-error");
   }
 
-  function openModal(mode) {
-    if (open || alreadyQuoted()) return;
-    if (mode === "stay" && storeGet(SK_STAY) === "1") return;
-    if (mode === "exit" && storeGet(SK_EXIT) === "1") return;
-    if (sourceEl) sourceEl.value = mode === "exit" ? "quote-popup-exit" : "quote-popup-stay";
+  function openModal() {
+    if (open || alreadySeen()) return;
+    if (sourceEl) sourceEl.value = "quote-popup-first-visit";
     clearAlert();
     lastFocus = document.activeElement;
     modal.hidden = false;
     document.body.classList.add("is-quote-open");
     open = true;
-    storeSet(mode === "exit" ? SK_EXIT : SK_STAY, "1");
+    rememberSeen();
     window.requestAnimationFrame(function () {
       if (window.matchMedia("(pointer: coarse)").matches) return;
       var first = document.getElementById("ts-qp-email") || dialog;
@@ -92,6 +94,7 @@
   }
 
   function closeModal() {
+    rememberSeen();
     if (!open) return;
     modal.hidden = true;
     document.body.classList.remove("is-quote-open");
@@ -176,7 +179,7 @@
       })
       .then(function () {
         form.reset();
-        storeSet(SK_DONE, "1");
+        rememberSeen();
         localSet(LK_DONE, "1");
         showAlert(cfg.popupSuccess || "Thanks! We'll email you shortly.", "success");
         window.setTimeout(closeModal, 1600);
@@ -202,32 +205,23 @@
     btn.addEventListener("click", closeModal);
   });
 
-  if (!alreadyQuoted()) {
+  if (!alreadySeen()) {
     stayTimer = window.setTimeout(function () {
-      var showStay = function () {
-        openModal("stay");
+      if (alreadySeen()) return;
+      var showOnce = function () {
+        openModal();
       };
       if (document.visibilityState === "visible") {
-        showStay();
+        showOnce();
         return;
       }
       var onVis = function () {
         if (document.visibilityState !== "visible") return;
         document.removeEventListener("visibilitychange", onVis);
-        showStay();
+        showOnce();
       };
       document.addEventListener("visibilitychange", onVis);
-    }, 6000);
-
-    document.documentElement.addEventListener("mouseleave", function (e) {
-      if (e.clientY > 12) return;
-      if (open) return;
-      if (stayTimer) {
-        window.clearTimeout(stayTimer);
-        stayTimer = null;
-      }
-      openModal("exit");
-    });
+    }, 2500);
   }
 
   ensureEmailJs().then(initEmailJs).catch(function () {});

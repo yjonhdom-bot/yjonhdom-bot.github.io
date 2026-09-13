@@ -64,6 +64,7 @@
     try {
       sessionStorage.setItem("tsq_done", "1");
       localStorage.setItem("tsq_submitted", "1");
+      localStorage.setItem("tsq_seen", "1");
     } catch (_) {}
   }
 
