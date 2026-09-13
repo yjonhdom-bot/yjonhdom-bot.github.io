@@ -74,7 +74,7 @@
     var message = field(form, "message");
     var source = field(form, "source") || kind;
     if (kind === "newsletter") {
-      message = "[newsletter] New list signup";
+      message = "[newsletter] New list signup — garment accessories";
     } else if (kind === "contact" && message) {
       message = "[contact] " + message;
     } else if (category) {
@@ -107,9 +107,15 @@
       var email = field(form, "email");
       var kind = form.getAttribute("data-emailjs");
       var needsMessage = kind !== "newsletter";
+      var websiteEl = form.elements.namedItem("website");
+      if (websiteEl && !String(websiteEl.value || "").trim()) {
+        websiteEl.value = window.location.href;
+      }
       if (!email || (needsMessage && !field(form, "message")) || !form.checkValidity()) {
         form.reportValidity();
-        showAlert(form, cfg.requiredText || "Please fill in the required fields.", "error");
+        showAlert(form, kind === "newsletter"
+          ? (cfg.popupRequired || cfg.requiredText || "Please enter your email.")
+          : (cfg.requiredText || "Please fill in the required fields."), "error");
         return;
       }
       if (!cfg.publicKey || !cfg.serviceId || !cfg.templateId) {
