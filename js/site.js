@@ -61,16 +61,6 @@
     document.addEventListener('click', function () { lang.classList.remove('is-open'); });
   }
 
-  const search = document.querySelector('[data-search]');
-  const searchOpen = document.querySelector('[data-search-open]');
-  const searchClose = document.querySelector('[data-search-close]');
-  if (search && searchOpen) {
-    searchOpen.addEventListener('click', function () { search.hidden = false; });
-  }
-  if (search && searchClose) {
-    searchClose.addEventListener('click', function () { search.hidden = true; });
-  }
-
   document.querySelectorAll('[data-form]').forEach(function (form) {
     if (form.hasAttribute('data-emailjs')) return;
     form.addEventListener('submit', function (e) {
