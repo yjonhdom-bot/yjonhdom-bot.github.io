@@ -1,4 +1,19 @@
 (function () {
+  const header = document.querySelector('[data-ls-nav]');
+  const onNavScroll = function () {
+    if (!header) return;
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      header.classList.remove('is-scrolled');
+      return;
+    }
+    const bar = header.querySelector('.ls-bar');
+    const threshold = (bar && bar.offsetHeight) || 0;
+    header.classList.toggle('is-scrolled', window.scrollY >= threshold);
+  };
+  onNavScroll();
+  window.addEventListener('scroll', onNavScroll, { passive: true });
+  window.addEventListener('resize', onNavScroll, { passive: true });
+
   const drawer = document.querySelector('[data-nav-panel]');
   const overlay = document.querySelector('[data-nav-overlay]');
   const openBtn = document.querySelector('[data-nav-toggle]');
