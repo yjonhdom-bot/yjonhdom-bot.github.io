@@ -84,38 +84,6 @@
     });
   }
 
-  if (catalog) {
-    const cards = Array.prototype.slice.call(catalog.querySelectorAll('.ls-pcard'));
-    const sentinel = document.querySelector('[data-infinite-scroll]');
-    const pageSize = parseInt(catalog.getAttribute('data-page-size') || '9', 10) || 9;
-    let shown = 0;
-
-    function paint() {
-      cards.forEach(function (card, i) {
-        card.classList.toggle('is-more-hidden', i >= shown);
-      });
-      if (sentinel) sentinel.hidden = shown >= cards.length;
-    }
-
-    function loadMore() {
-      if (shown >= cards.length) return false;
-      shown = Math.min(shown + pageSize, cards.length);
-      paint();
-      return shown < cards.length;
-    }
-
-    shown = Math.min(pageSize, cards.length);
-    paint();
-    if (sentinel && shown < cards.length && 'IntersectionObserver' in window) {
-      sentinel.hidden = false;
-      const io = new IntersectionObserver(function (entries) {
-        if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
-        if (!loadMore()) io.disconnect();
-      }, { root: null, rootMargin: '480px 0px', threshold: 0 });
-      io.observe(sentinel);
-    }
-  }
-
   document.querySelectorAll('[data-gallery]').forEach(function (gallery) {
     const stage = gallery.querySelector('[data-gallery-stage]');
     gallery.querySelectorAll('[data-gallery-thumb]').forEach(function (btn) {
